@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*to do
+round corners for unread notifications
+top panel
+notification image
+notification comments
+*/
+
+/*
+### Primary
+
+- Red: hsl(1, 90%, 64%)
+- Blue: hsl(219, 85%, 26%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Very light grayish blue: hsl(210, 60%, 98%)
+- Light grayish blue 1: hsl(211, 68%, 94%)
+- Light grayish blue 2: hsl(205, 33%, 90%)
+- Grayish blue: hsl(219, 14%, 63%)
+- Dark grayish blue: hsl(219, 12%, 42%)
+- Very dark blue: hsl(224, 21%, 14%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans)
+- Weights: 500, 800
+*/
+
+body {
+    font-size: 16px;
+    font-family: 'Plus Jakarta Sans', 'sans-serif';
+    font-weight: 500;
+    color: hsl(219, 12%, 42%);
+}
+
+a {
+    color: hsl(219, 85%, 26%);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+a:visited{
+    color: hsl(219, 14%, 63%);
+
+}
+
+a.username {
+    color: hsl(224, 21%, 14%);
+}
+
+#top-section {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 10px;
+}
+
+.notification-count {
+    font-size: 20px;
+    font-weight: bold;
+    color: hsl(219, 12%, 42%);
+}
+
+.number {
+    background-color: hsl(224, 21%, 14%);
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.action {
+    margin-left: auto;
+}
+
+.time {
+    color: hsl(219, 14%, 63%);
+
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.icon img {
+    height: inherit;
+    width: inherit;
+}
+
+.notification {
+    display: flex;
+    flex-direction: row;
+    margin: 8px 13px;
+    padding: 15px 19px;
+    
+}
+
+.notification.is-unread {
+    background-color: hsl(210, 60%, 98%);
+    border-radius: 10px;
+
+}
+
+.dot {
+    display: none;
+}
+
+.is-unread .dot {
+    display: inline-block;
+    min-width: 10px;
+    min-height: 10px;
+    border-radius: 50%;
+    background-color: hsl(1, 90%, 64%);
+    margin-left: 10px;
+}
+
+/*choose a background color for the element
+change the cursor to a hand
+put everything inside of hover pseudo class*/
+
+.img-comment {
+    display: flex;
+    
+}
+
+.comment:hover {
+    background-color: blue;
+    cursor: pointer;    
+}
+
+.comment {
+    border: solid rgb(184, 182, 182) 1px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.photo {
+    width: 40px;
+    height: 40px;
+    
+}
+@media (min-width: 600px) {
+
+}
